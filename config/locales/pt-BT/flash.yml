@@ -1,0 +1,14 @@
+pt-BR:
+  flash:
+    must_be_logged_in: 'Você precisa estar logado para acessar essa pagina.'
+
+    signup:
+      create:
+        notice: 'Cadastro realizado com suceasso!'
+
+    login:
+      create:
+        alert: 'E-mail/senha inválidos. Tente novamente'
+
+      destroy:
+        notice: 'Sua sessão foi encerrada com sucesso!'

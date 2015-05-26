@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset"utf-8">
+    <title>E-mail</title>
+    <%= stylesheet_link_tag 'mailer' %>
+  </head>
+
+  <body>
+    <div class="page">
+      <%= yield %>
+      <p>
+       <%= t('mailer.greeting') %>,
+        <br>
+        <%= t('mailer.signature') %>
+      </p>
+    </div>
+  </body>
+</html>

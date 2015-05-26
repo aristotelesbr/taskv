@@ -1,0 +1,10 @@
+pt-BR:
+  mailer:
+    signature: |
+      Equipe Taskv
+      http://taskv.com.br
+
+    greeting: Abraços
+
+    welcome:
+      subject: 'Bem vindo ao Taskv'

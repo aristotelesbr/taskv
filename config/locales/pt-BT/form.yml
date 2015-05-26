@@ -1,0 +1,17 @@
+pt-BR:
+  form_error_message: Verifique o formulário antes de continuar.
+
+  labels:
+    user:
+      name: 'Seu nome'
+      email: 'Seu e-mail'
+      password: 'Sua senha'
+      password_confirmation: 'Confirme sua senha'
+
+  helpers:
+    submit:
+      login: 'Assece sua conta'
+      user:
+        create: 'Quero me cadastrar!'
+        update: 'Atualizar meus dados'
+

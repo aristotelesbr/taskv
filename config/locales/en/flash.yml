@@ -1,0 +1,6 @@
+en:
+  flash:
+    signup:
+      must_be_logged_in: ' You....'
+      create:
+        notice: "You account has been created!"

@@ -1,0 +1,1 @@
+MAILER_FROM = ENV.fetch('MAILER_FROM')

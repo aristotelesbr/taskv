@@ -1,0 +1,17 @@
+en:
+  form_error_message: Please double check your form date before continuing.
+
+  labels:
+    user:
+      name: 'Your name'
+      email: 'Your e-mail address'
+      password: 'Your password'
+      password_confirmation: 'Confirm you password'
+
+  helpers:
+    submit:
+      login: 'Login'
+      user:
+        create: 'Create my account!'
+        update: 'Update my profile'
+

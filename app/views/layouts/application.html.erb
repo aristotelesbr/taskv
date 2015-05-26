@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taskv</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <% if logged_in?  %>
+    <%= t('user.greeting.', name: current_user.name) %>
+    <%= button_to t('menu.logout'), logout_path, method: 'delete' %>
+  <% else %>
+    <%= link_to t('menu.signup'), signup_path %>
+    <%= link_to t('menu.login'), login_path %>
+  <% end %>
+</nav>
+
+<%= yield %>
+
+
+<footer>
+  <p>
+    <%= t('select_locale') %>:
+    <%= link_to 'English', '/?locale=en' %>
+    <%= link_to 'Português, (Brasil)', '/?locale=pt-BR'  %>
+  </p>
+</footer>
+</body>
+</html>
