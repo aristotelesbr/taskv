@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
   root 'login#new'
 
-  get   'signup' => 'signup#new'
+  get  'signup' => 'signup#new'
   post  'signup' => 'signup#create'
 
-  get        'login' => 'login#new'
-  post      'login' => 'login#create'
-  delete   'logout' => 'login#destroy'
+  get  'login' => 'login#new'
+  post  'login' => 'login#create'
+  delete  'logout' => 'login#destroy'
 
   get  'tasks' => "tasks#index"
+  post  'tasks/new' => 'tasks#create', as: 'new_task'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

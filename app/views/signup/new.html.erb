@@ -1,19 +1,5 @@
 <h1>Signup#new</h1>
-<% if @user.errors.any? %>
-	<p>
-		 <%=  t('form_error_message') %>
-	</p>
-
-	<ul>
-		<% for message in @user.errors.full_messages %>
-			<li>
-				<%= message %>
-			</li>
-		<% end %>
-	</ul>
-<% end %>
-
-
+<%= render 'error_messages', record: @user  %>
 
 <%= form_for @user, url: signup_path do |f|%>
 	<div>

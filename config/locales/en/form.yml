@@ -8,6 +8,9 @@ en:
       password: 'Your password'
       password_confirmation: 'Confirm you password'
 
+    task:
+      title: 'Task title'
+
   helpers:
     submit:
       login: 'Login'

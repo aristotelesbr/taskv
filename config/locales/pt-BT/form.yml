@@ -8,10 +8,17 @@ pt-BR:
       password: 'Sua senha'
       password_confirmation: 'Confirme sua senha'
 
+    task:
+      title: 'Título da tarefa'
+
   helpers:
     submit:
       login: 'Assece sua conta'
       user:
         create: 'Quero me cadastrar!'
         update: 'Atualizar meus dados'
+
+      task:
+        create: 'adcionar'
+
 

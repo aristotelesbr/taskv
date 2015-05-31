@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <% flash.each do |type, message| %>
+    <p class="message <%= type %>">
+      <%= message %>
+    </p>
+  <% end %>
+
 <nav>
   <% if logged_in?  %>
     <%= t('user.greeting.', name: current_user.name) %>

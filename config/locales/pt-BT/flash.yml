@@ -12,3 +12,7 @@ pt-BR:
 
       destroy:
         notice: 'Sua sessão foi encerrada com sucesso!'
+
+    task:
+      create:
+        notice: 'Tarefa adciona com sucesso!'

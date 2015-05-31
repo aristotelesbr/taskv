@@ -1,0 +1,8 @@
+<%= render 'form', task: @task %>
+
+<% for task in @tasks %>
+  <li>
+    <%= task.title %>
+  </li>
+<% end %>
+

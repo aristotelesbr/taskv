@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   	[a-z0-9]+([._][a-z0-9]+)*(\+[^@]+)?
   	@
   	[a-z0-9]+([-.][a-z0-9]+)*
-  	\.[a-z]{2,4}	
+  	\.[a-z]{2,4}
   	\z
   /xi
 
@@ -12,5 +12,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :name
   validates_format_of :email, with: EMAIL_FORMAT
-  validates_uniqueness_of :email 
+  validates_uniqueness_of :email
+
+  has_many :tasks
 end

@@ -8,7 +8,7 @@ class SignupController < ApplicationController
 
   	if @user.save
       Mailer.welcome(@user.name, @user.email).deliver_later
-  	 redirect_to login_path, notice: t('flash.signup.create.notice')
+      redirect_to login_path, notice: t('flash.signup.create.notice')
     else
       render :new
     end
@@ -18,7 +18,7 @@ class SignupController < ApplicationController
 
   def user_params
   	params
-  		.require(:user)
-  		.permit(:name, :email, :password, :password_confirmation)
+    .require(:user)
+    .permit(:name, :email, :password, :password_confirmation)
   end
 end
